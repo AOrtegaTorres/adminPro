@@ -13,30 +13,6 @@ import { RegisterComponent } from './login/register/register.component';
 
 const APP_ROUTES: Routes = [
     {
-        path: '',
-        component: PagesComponent,
-        children: [
-            {
-                path: '',
-                redirectTo: '/dashboard',
-                pathMatch: 'full'
-            },
-            {
-                path: 'dashboard',
-                component: DashboardComponent
-            },
-            {
-                path: 'progress',
-                component: ProgressComponent
-            },
-            {
-                path: 'graph1',
-                component: Graph1Component
-            },
-
-        ]
-    },
-    {
         path: 'login',
         component: LoginComponent
     },
